@@ -36,6 +36,7 @@ Access the Live Demo= (https://guardians-of-sustainability.web.app)
 
 📌 Note: Location services must be enabled for full functionality during image upload.
 
+---
 
 🧪 Sample Data
 
