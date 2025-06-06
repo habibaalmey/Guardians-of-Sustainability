@@ -61,7 +61,7 @@ To simulate the experience:
 
 ## 🏅 Recognition
 
-This project was submitted for the **Sharjah Sustainability Award**, showcasing AI-driven initiatives for smart city governance and sustainable development.
+This project was selected for final presentation at the **Sharjah Sustainability Award**, showcasing AI-driven initiatives for smart city governance and sustainable development.
 
 ---
 
