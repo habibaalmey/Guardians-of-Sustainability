@@ -2,6 +2,7 @@ Guardians of Sustainability 🌍
 
 is an AI-powered urban infrastructure monitoring system designed to promote sustainable city management in the United Arab Emirates (UAE). By leveraging computer vision and real-time data analysis, the project provides a scalable solution to assist government agencies in identifying and prioritizing infrastructure issues across urban environments.
 
+
 This project was developed as part of the **Sharjah Sustainability Award** initiative, with a focus on addressing critical sustainability challenges using modern technologies.
 
 
@@ -31,6 +32,8 @@ This system reduces the reliance on manual reporting and supports proactive main
 Test the application through the deployed demo:
 
 Access the Live Demo= (https://guardians-of-sustainability.web.app)
+
+
 📌 Note: Location services must be enabled for full functionality during image upload.
 
 
@@ -56,6 +59,7 @@ To simulate the experience:
 🏅 Recognition
 
 This project was selected for the **Sharjah Sustainability Award**, showcasing AI-driven initiatives for smart city governance and sustainable development.
+
 
  
 👤 Project Author
