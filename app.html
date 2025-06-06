@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Guardians of Sustainability</title>
+  <link rel="stylesheet" href="/app-style.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+
+<body>
+  <main class="container">
+    <a href="index.html" class="btn btn-back" id="backBtn">← Back</a>
+
+    <br><br><br>
+    <h1>Guardians of Sustainability</h1>
+
+    <form id="imageForm">
+      <label for="fileInput">Upload Images:</label>
+      <p class="description">Add images to analyze priority levels of issues.</p>
+
+      <input type="file" id="fileInput" name="file" multiple />
+
+      <input type="hidden" name="prompt" id="promptInputHidden" value="Analyze the image and classify the issue into one of four priority levels:
+- High Priority: Urgent danger or major disruption.
+- Medium Priority: Should be addressed soon.
+- Low Priority: Minor issue, can be monitored.
+- No Priority: No immediate action needed.
+
+Format:
+- Priority Level: (High/Medium/Low/No)
+- Issue: Short description (e.g., Broken streetlight or Pothole).
+
+Examples:
+
+High Priority:
+- Issue: Fallen power line
+
+Medium Priority:
+- Issue: Pothole on a street
+
+Low Priority:
+- Issue: Faded road markings, broken street, leaves on sides of road
+
+No Priority:
+- Issue: Clean and functional streetlight
+
+If no issues are found, state: No issue detected.
+
+DONT ALWAYS GIVE MEDIUM USE LOW AND HIGH TOO MAYBE ANY NOT EVERYTHING IS A Priority
+DONT USE ANY * IN THE OUTPUT AT ALL!" />
+
+      <button type="submit" class="btn">Analyze</button>
+    </form>
+
+    <div id="map" style="height: 400px; margin-top: 30px;"></div>
+    <div class="output">
+      Select one or multiple images to see the full report
+    </div>
+    
+  </main>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+  <script>
+    // Back button logic with fallback
+    document.getElementById('backBtn').addEventListener('click', function (e) {
+      e.preventDefault();
+      if (window.history.length > 1) {
+        window.history.back();
+      } else {
+        window.location.href = 'index.html';
+      }
+    });
+  </script>
+
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>
